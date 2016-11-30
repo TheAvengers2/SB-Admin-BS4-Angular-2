@@ -1,19 +1,24 @@
 import {Component,OnInit} from '@angular/core';
 
 import { TableJsonService } from './table-json.service';
+import { Observable } from 'rxjs/Observable';
+import { TableJsonRecord } from './tableJsonRecord';
 
 @Component({
 	moduleId: module.id,
 	selector: 'tables-json',
-	templateUrl: 'tables.json.component.html'
+	templateUrl: 'tables.json.component.html',
+	providers:[TableJsonService]
 })
 
 export class TableJsonComponent implements OnInit{
 
-	constructor(service:TableJsonService){
-		this.data = service.get();
+	constructor(private service:TableJsonService){
 	}
 
-	data:TableJsonService[] = null;
+	data: Observable<TableJsonRecord[]>;
 
+ngOnInit(){
+	this.data = this.service.get();
+}
 }
