@@ -1,5 +1,7 @@
 # SB Admin rewritten in Angular2 and Bootstrap 4
 
+#### Action: change class refer to [startmin](http://secondtruth.github.io/startmin/pages/buttons.html)
+
 Simple Dashboard Admin App built using Angular 2 and Bootstrap 4
 
 This project is a port of the famous Free Admin Bootstrap Theme [SB Admin v2.0](http://startbootstrap.com/template-overviews/sb-admin-2/) to Angular2 Theme.
