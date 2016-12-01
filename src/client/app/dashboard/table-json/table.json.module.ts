@@ -1,9 +1,8 @@
 import { NgModule } from '@angular/core';
 import { RouterModule } from '@angular/router';
 
-import { TableComponent } from './table.component';
-
-import { TableJsonService } from './table-json.service'
+import { TableJsonComponent } from './table.json.component';
+import { TableJsonService } from './table-json.service';
 
 @NgModule({
     imports: [RouterModule],

@@ -1,5 +1,5 @@
-export class TableJsonRecord{
-  constructor(
+export class TableJsonRecord {
+  constructor (
     public id:number,
     public col1:string,
     public col2:string,
@@ -7,5 +7,5 @@ export class TableJsonRecord{
     public col4:string,
     public col5:string,
     public col6?:string
-  ){}
+  ) { }
 }

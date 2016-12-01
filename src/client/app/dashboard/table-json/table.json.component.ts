@@ -11,14 +11,12 @@ import { TableJsonRecord } from './tableJsonRecord';
 	providers:[TableJsonService]
 })
 
-export class TableJsonComponent implements OnInit{
-
-	constructor(private service:TableJsonService){
+export class TableJsonComponent implements OnInit {
+	data: Observable<TableJsonRecord[]>;
+	constructor(private service:TableJsonService) {
 	}
 
-	data: Observable<TableJsonRecord[]>;
-
-ngOnInit(){
-	this.data = this.service.get();
-}
+	ngOnInit() {
+		this.data = this.service.get();
+	}
 }

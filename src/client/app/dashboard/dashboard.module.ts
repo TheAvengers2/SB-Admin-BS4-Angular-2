@@ -33,7 +33,8 @@ import {SidebarComponent} from '../shared/index';
         GridModule,
     	BSComponentModule,
         BSElementModule,
-        BlankPageModule
+        BlankPageModule,
+        TableJsonModule
     ],
     declarations: [DashboardComponent, TopNavComponent, SidebarComponent],
     exports: [DashboardComponent, TopNavComponent, SidebarComponent]

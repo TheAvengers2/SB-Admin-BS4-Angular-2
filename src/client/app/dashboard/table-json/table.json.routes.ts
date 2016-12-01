@@ -1,8 +1,8 @@
 import { Route } from '@angular/router';
 
-import { TableComponent } from './index';
+import { TableJsonComponent } from './table.json.component';
 
-export const TableRoutes: Route[] = [
+export const TableJsonRoutes: Route[] = [
 	{
 		path: 'tables-json',
 		component: TableJsonComponent

@@ -6,9 +6,10 @@ import { BlankPageRoutes } from './blank-page/index';
 import { TableRoutes } from './tables/index';
 import { FormRoutes } from './forms/index';
 import { GridRoutes } from './grid/index';
+import { TableJsonRoutes } from './table-json/index';
+
 import { BSComponentRoutes } from './bs-component/index';
 import { BSElementRoutes } from './bs-element/index';
-
 import { DashboardComponent } from './index';
 
 export const DashboardRoutes: Route[] = [
@@ -23,7 +24,8 @@ export const DashboardRoutes: Route[] = [
 	    	...BlankPageRoutes,
         ...FormRoutes,
         ...GridRoutes,
-        ...BSElementRoutes
+        ...BSElementRoutes,
+        ...TableJsonRoutes
     	]
   	}
 ];
