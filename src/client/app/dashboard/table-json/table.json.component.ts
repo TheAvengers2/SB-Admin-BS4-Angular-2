@@ -1,8 +1,9 @@
 import {Component,OnInit} from '@angular/core';
 
-import { TableJsonService } from './table-json.service';
-import { Observable } from 'rxjs/Observable';
+//import { RECORDS } from './table-json.service';
+//import { Observable } from 'rxjs/Observable';
 import { TableJsonRecord } from './tableJsonRecord';
+import { TableJsonService } from './table-json.service';
 
 @Component({
 	moduleId: module.id,
@@ -12,11 +13,11 @@ import { TableJsonRecord } from './tableJsonRecord';
 })
 
 export class TableJsonComponent implements OnInit {
-	data: Observable<TableJsonRecord[]>;
+	data: TableJsonRecord[];
 	constructor(private service:TableJsonService) {
 	}
 
 	ngOnInit() {
-		this.data = this.service.get();
+		this.data = this.service.getData();
 	}
 }

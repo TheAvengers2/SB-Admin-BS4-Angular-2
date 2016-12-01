@@ -29,6 +29,10 @@ export class TableJsonService {
                     .catch(this.handleError);
   }
 
+  getData(): TableJsonRecord[] {
+    return RECORDS;
+  }
+
   /**
     * Handle HTTP error
     */
@@ -41,3 +45,56 @@ export class TableJsonService {
     return Observable.throw(errMsg);
   }
 }
+
+export const RECORDS:TableJsonRecord[] = [
+  {
+    "id": 1,
+    "col1": "col1",
+    "col2": "col2",
+    "col3": "col3",
+    "col4": "col4",
+    "col5": "col5"
+  }, {
+    "id": 1,
+    "col1": "col1",
+    "col2": "col2",
+    "col3": "col3",
+    "col4": "col4",
+    "col5": "col5"
+  }, {
+    "id": 1,
+    "col1": "col1",
+    "col2": "col2",
+    "col3": "col3",
+    "col4": "col4",
+    "col5": "col5"
+  }, {
+    "id": 1,
+    "col1": "col1",
+    "col2": "col2",
+    "col3": "col3",
+    "col4": "col4",
+    "col5": "col5"
+  }, {
+    "id": 1,
+    "col1": "col1",
+    "col2": "col2",
+    "col3": "col3",
+    "col4": "col4",
+    "col5": "col5"
+  }, {
+    "id": 1,
+    "col1": "col1",
+    "col2": "col2",
+    "col3": "col3",
+    "col4": "col4",
+    "col5": "col5"
+  }, {
+    "id": 1,
+    "col1": "col1",
+    "col2": "col2",
+    "col3": "col3",
+    "col4": "col4",
+    "col5": "col5"
+  }
+];
